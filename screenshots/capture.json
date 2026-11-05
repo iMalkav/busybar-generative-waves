@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-11-05T13:52:41.715607+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.generative_waves",
+    "name": "Generative Waves",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "Animated wave patterns with adjustable density and palette.",
+    "heap_size_kib": 256,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "pattern": "sine",
+      "density": 18,
+      "speed": 2,
+      "color": "#59D9F2"
+    }
+  },
+  "inputs": [],
+  "data_note": "Schema default settings.",
+  "fixture": null,
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "0617614a686db9283920530d44cc8b13519504984708648408a882b66f889a12",
+      "png_sha256": "ce5fa79116bb3a24a8fd89257079e6c2d3c9382309b4fbe105be91d6760e655d"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "7f7c3bbd5d58031ce126f44c4148a3272ddf982d63b45dad7d49e134d9106f2d",
+      "png_sha256": "b486637ec32991dea007ebcd77061b9d35cf26c3e2d1f152160c9757f3a74895"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
